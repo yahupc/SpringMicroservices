@@ -20,7 +20,7 @@ public class Student {
     private String name;
 
     @Column(name = "last_name")  //para mantener el standar mysql
-    private String lastname;    // para mantener el standar java
+    private String lastName;    // para mantener el standar java
     private String email;
 
     @Column(name = "course_id")

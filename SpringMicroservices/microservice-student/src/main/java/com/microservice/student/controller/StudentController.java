@@ -30,7 +30,7 @@ public class StudentController {
     }
 
     // Teniendo comunicacion con el microservice Student
-    @GetMapping("/search-my-course/{idCourse}")
+    @GetMapping("/search-by-course/{idCourse}")
     public ResponseEntity<?> findByIdCourse(@PathVariable Long idCourse){
         return ResponseEntity.ok(studentService.findByIdCourse(idCourse));
     }
